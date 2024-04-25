@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.centralizar{
+    margin: 0px auto;
+    width: 900px;
+    text-align: center;
+}
+
+.background{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+
+.capa{
+    background-image: url(Imagens/pexels-treedeo-16926054cinza.jpg);
+    height: 100vh;
+    display: flex;
+}
+
+.conteudo-capa{
+    margin: auto;
+    text-shadow: 0px 4px black;
+}
+
+.conteudo-capa h2{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Fraunces', serif;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: #c4a47c;
+    margin: 30px ;
+    text-align: center;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    line-height: 34px;
+    font-size: 16px;
+}
+
+.faixa{
+    background-image: url(Imagens/faixa-1.png);
+    height: 40vh;
+    margin: 20px 0px;
+}
+
+i{
+    text-shadow: 1px 2px black ;
+}
+
+.conteudo-faixa{
+    margin: auto;
+    background-color: #604829;
+    color: #fff;
+    padding: 10px 50px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.faixa-2{
+    background-image: url(Imagens/faixa-2.jpeg);
+    height: 40vh;
+    margin: 20px 0px;
+}
+
+.video{
+    display: flex;
+    margin: 20px 0px;
+}
+
+.video video{
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.fundo{
+    margin: 20px 0px ;
+    background-color: #604829;
+    padding: 10px 0px 30px 0px;
+}
+
+.fundo p{
+    width: 900px;
+    margin: auto;
+    color: #fff;
+}
+
+footer{
+    background-color: black;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.direita{
+    text-align: left;
+}
+
+.centro{
+    text-align: center;
+    font-size: 16px;
+}
+
+footer span{
+    color: #c4a47c;
+}
+
+footer p{
+    color: white;
+}
+
