@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+body{
+    width: 100%;
+    max-width: 1920px;
 }
 
 .centralizar{
@@ -23,6 +29,7 @@
     background-image: url(Imagens/pexels-treedeo-16926054cinza.jpg);
     height: 100vh;
     display: flex;
+    width: 100%;
 }
 
 .conteudo-capa{
@@ -98,6 +105,8 @@ i{
     width: 900px;
     margin: auto;
     color: #fff;
+    width: 100%;
+    max-width: 900px;
 }
 
 footer{
