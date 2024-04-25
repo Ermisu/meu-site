@@ -30,7 +30,7 @@ body{
     height: 100vh;
     display: flex;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .conteudo-capa{
