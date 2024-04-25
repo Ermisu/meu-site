@@ -6,8 +6,9 @@
 
 .centralizar{
     margin: 0px auto;
-    width: 900px;
+    max-width: 900px;
     text-align: center;
+    width: 100%;
 }
 
 .background{
@@ -15,6 +16,7 @@
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+    width: 100%;
 }
 
 .capa{
