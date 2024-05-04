@@ -17,30 +17,31 @@ body{
     width: 100%;
 }
 
-.background{
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    width: 100%;
+.imagem-carrosel{
+    max-width: 1920px;
+    max-height: 760px;
+    width: auto;
+    height: auto;
 }
 
-.capa{
-    background-image: url(Imagens/pexels-treedeo-16926054cinza.jpg);
-    height: 100vh;
-    display: flex;
-    width: 100%;
-}
-
-.conteudo-capa{
-    margin: auto;
-    text-shadow: 0px 4px black;
-}
-
-.conteudo-capa h2{
+.conteudo-carrosel h2{
     font-size: 50px;
     color: #fff;
     font-family: 'Fraunces', serif;
+    width: 100%;
+}
+
+.conteudo-carrosel{
+    position: absolute;
+    top: 30%;
+    margin-top: -25px ;
+}
+
+.carrosel{
+    margin-bottom: 35px;
+    position: relative;
+    width: 100%;
+    text-align: center;
 }
 
 h3{
@@ -58,6 +59,14 @@ p{
     width: 100%;
 }
 
+.background{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    width: 100%;
+}
+
 .faixa{
     background-image: url(Imagens/faixa-1.png);
     height: 40vh;
@@ -72,7 +81,7 @@ i{
     margin: auto;
     background-color: #604829;
     color: #fff;
-    padding: 10px 50px;
+    padding: 1% 4%;
     font-size: 18px;
     border-radius: 2px;
 }
@@ -83,16 +92,11 @@ i{
     margin: 20px 0px;
 }
 
-.video{
-    display: flex;
-    margin: 20px 0px;
-}
-
-.video video{
-    margin: auto;
-    width: 50%;
+#imagem-1{
+    margin: 20px auto;
     border-radius: 10px;
     border: 2px solid black;
+    width: 70%;
 }
 
 .fundo{
