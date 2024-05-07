@@ -21,15 +21,15 @@ body{
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 576px) {
-    .conteudo-carrosel {
-        font-size: 10px; /* Define o tamanho do h2 para dispositivos móveis */
+    .container-carrosel .conteudo-carrosel {
+        font-size: 18px; /* Define o tamanho do h2 para dispositivos móveis */
     }
 
-    .carousel-caption h5 {
-        font-size: 10px; /* Define o tamanho do h5 para dispositivos móveis */
+    .container-carrosel .carousel-caption h5 {
+        font-size: 14px; /* Define o tamanho do h5 para dispositivos móveis */
     }
 
-    .carousel-caption a.btn {
+    .container-carrosel .carousel-caption a.btn {
         font-size: 12px; /* Define o tamanho do link (a) para dispositivos móveis */
         padding: 5px 10px; /* Ajusta o padding do botão para dispositivos móveis */
     }
