@@ -17,24 +17,43 @@ body{
     width: 100%;
 }
 
-.imagem-carrosel{
-    max-width: 1920px;
-    max-height: 760px;
-    width: auto;
-    height: auto;
+/*Carrossel*/
+
+.container-carrosel{
+    margin-bottom: 30px;
 }
 
-.conteudo-carrosel h2{
-    font-size: 50px;
+.imagem-carrosel{
+    max-height: 100vh;
+}
+
+.carousel-caption h2{
+    font-size: 40px;
     color: #fff;
     font-family: 'Fraunces', serif;
-    width: 100%;
 }
 
-.conteudo-carrosel{
+.carousel-caption{
     position: absolute;
-    top: 30%;
+    top: 45%;
     margin-top: -25px ;
+    opacity: 0; /* Começa com opacidade 0 */
+    transition: opacity 0.5s ease; /* Transição suave de opacidade */
+    transition-delay: 0.3s; /* Atraso de 1 segundo antes que a transição comece */
+}
+
+.carousel-item.active .carousel-caption {
+    opacity: 1; /* Opacidade 1 quando o slide está ativo */
+}
+
+.carousel-caption h5{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.carousel-caption a{
+    padding: 5px 40px;
 }
 
 .carrosel{
@@ -43,6 +62,7 @@ body{
     width: 100%;
     text-align: center;
 }
+
 
 h3{
     font-family: 'Oswald', sans-serif;
@@ -59,40 +79,55 @@ p{
     width: 100%;
 }
 
-.background{
-    background-position: center;
+
+/*FAIXA BACKGROUND*/
+
+.faixa {
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 40vh;
+    margin: 20px 0px;
+
+}
+
+.conteudo-faixa {
     display: flex;
-    width: 100%;
-}
-
-.faixa{
-    background-image: url(Imagens/faixa-1.png);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 40vh;
-    margin: 20px 0px;
+    color: white;
+    opacity: 0; /* Altere a opacidade para 0 inicialmente para ocultar o texto */
+    transition: opacity 0.5s ease; /* Transição de opacidade mais simples */
+    text-align: center;
 }
 
-i{
-    text-shadow: 1px 2px black ;
+/* Adiciona a classe 'in-view' quando a faixa está visível na tela */
+.faixa.in-view .conteudo-faixa {
+    opacity: 1; /* Mostra o conteúdo com desvanecimento suave */
 }
 
-.conteudo-faixa{
-    margin: auto;
+
+
+.conteudo-faixa i {
     background-color: #604829;
-    color: #fff;
-    padding: 1% 4%;
-    font-size: 18px;
-    border-radius: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
 }
 
-.faixa-2{
+.container-baixo{
     background-image: url(Imagens/faixa-2.jpeg);
-    height: 40vh;
-    margin: 20px 0px;
 }
 
-#imagem-1{
+.container-topo{
+    background-image: url(Imagens/faixa-1.png);
+}
+
+
+.imagem-1{
     margin: 20px auto;
     border-radius: 10px;
     border: 2px solid black;
@@ -113,7 +148,7 @@ i{
 }
 
 footer{
-    background-color: black;
+    background-color: #604829;
     position: relative;
     padding-bottom: 10px;
 }
@@ -135,3 +170,16 @@ footer p{
     color: white;
 }
 
+.grafico{
+    width: 30%;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.container-grafico{
+    margin-top: 20px;
+    text-align: center;
+    
+}
