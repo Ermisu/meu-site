@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="menu.css">
-    <title>Espiritualidade Nativa</title>
+    <title>Participantes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +22,10 @@
 
 }
 
-
+.navbar .btn:hover {
+    transform: scale(1.1); /* Ajuste o valor conforme desejado */
+    background-color: #2ecc71;
+}
 
 .gallery{
     display:flex;
@@ -99,6 +102,13 @@
 .buy-1{
     background: #b2bec3;
 }
+  
+@media (max-width: 768px) {
+    .navbar .btn {
+        margin: 5px; /* Reduza a margem para caber melhor em telas menores */
+    }
+}
+  
 @media(max-width:1000px){
     .content{
         width: 250px;
