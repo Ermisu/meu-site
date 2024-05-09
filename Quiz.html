@@ -8,68 +8,186 @@
   <link rel="stylesheet" href="estilo-quiz.css">
 </head>
 <body>
-  <div class="container mt-5">
+      
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <nav class="navbar navbar-dark bg-dark">
+                <form class="form-inline">
+                    <a href="index.html" class="btn btn-outline-success" type="button">PAGINA PRINCIPAL</a>
+                </form>
+                <button class="btn btn-outline-light" id="btnCompartilhar">
+                    <i class="fas fa-share"></i> Compartilhar
+                </button>
+                <!-- Popover de compartilhamento -->
+                <div id="popoverCompartilhar" style="display: none;">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/index.html" class="btn btn-outline-primary btn-block" target="_blank">Compartilhar no Facebook</a>
+                    <a href="https://www.instagram.com/?url=http://127.0.0.1:5500/index.html" class="btn btn-outline-secondary btn-block" target="_blank">Compartilhar no Instagram</a>
+                    <a href="whatsapp://send?text=Confira este site:http://127.0.0.1:5500/index.html" class="btn btn-outline-danger btn-block">Compartilhar no WhatsApp</a>
+                    <!-- Adicione outros botões de compartilhamento conforme necessário -->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</div>
+
+  <div class="container mt-5 container-topo-todos">
     <div class="card">
       <div class="card-body">
         <h2 class="card-title text-center mb-4">Quiz</h2>
         <form id="quiz-form">
-          <div class="form-group" id="question1">
-            <label for="q1">Qual é a capital do Brasil?</label>
+          <div class="question" id="question1">
+            <label class="form-label" for="q1">Qual é a maior doença que o alcoolismo causa? </label>
             <div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="q1" id="q1a" value="Rio de Janeiro">
-                <label class="form-check-label" for="q1a">Rio de Janeiro</label>
+                <input class="form-check-input" type="radio" name="q1" id="q1a" value="Cirrose">
+                <label class="form-check-label" for="q1a">Cirrose</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="q1" id="q1b" value="Brasília">
-                <label class="form-check-label" for="q1b">Brasília</label>
+                <input class="form-check-input" type="radio" name="q1" id="q1b" value="Bronquite">
+                <label class="form-check-label" for="q1b">Bronquite</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="q1" id="q1c" value="São Paulo">
-                <label class="form-check-label" for="q1c">São Paulo</label>
+                <input class="form-check-input" type="radio" name="q1" id="q1c" value="HIV">
+                <label class="form-check-label" for="q1c">HIV</label>
               </div>
             </div>
           </div>
-          <div class="form-group" id="question2">
-            <label for="q2">Quem escreveu "Dom Quixote"?</label>
+          <div class="question" id="question2">
+            <label class="form-label" for="q2">Qual das doenças não está relacionada ao alcoolismo?</label>
             <div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="q2" id="q2a" value="Miguel de Cervantes">
-                <label class="form-check-label" for="q2a">Miguel de Cervantes</label>
+                <input class="form-check-input" type="radio" name="q2" id="q2a" value="Gastrite">
+                <label class="form-check-label" for="q2a">Gastrite</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="q2" id="q2b" value="William Shakespeare">
-                <label class="form-check-label" for="q2b">William Shakespeare</label>
+                <input class="form-check-input" type="radio" name="q2" id="q2b" value="Diabetes">
+                <label class="form-check-label" for="q2b">Diabetes</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="q2" id="q2c" value="Machado de Assis">
-                <label class="form-check-label" for="q2c">Machado de Assis</label>
+                <input class="form-check-input" type="radio" name="q2" id="q2c" value="Cirrose">
+                <label class="form-check-label" for="q2c">Cirrose</label>
               </div>
             </div>
           </div>
-          <div class="form-group" id="question3">
-            <label for="q3">Qual é o maior planeta do sistema solar?</label>
+          <div class="question" id="question3">
+            <label class="form-label" for="q3">Quando surgiu o álcool?</label>
             <div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="q3" id="q3a" value="Júpiter">
-                <label class="form-check-label" for="q3a">Júpiter</label>
+                <input class="form-check-input" type="radio" name="q3" id="q3a" value="Período neolítico">
+                <label class="form-check-label" for="q3a">Período neolítico</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="q3" id="q3b" value="Saturno">
-                <label class="form-check-label" for="q3b">Saturno</label>
+                <input class="form-check-input" type="radio" name="q3" id="q3b" value="Período renascentista">
+                <label class="form-check-label" for="q3b">Período renascentista</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="q3" id="q3c" value="Terra">
-                <label class="form-check-label" for="q3c">Terra</label>
+                <input class="form-check-input" type="radio" name="q3" id="q3c" value="Período paleolítico">
+                <label class="form-check-label" for="q3c">Período paleolítico</label>
               </div>
             </div>
           </div>
           <button type="submit" class="btn btn-primary btn-block">Enviar</button>
         </form>
-        <div id="result" class="result mt-4"></div>
+        <div class="result mt-4"></div>
+        <button id="try-again" class="btn btn-secondary btn-block mt-2" style="display: none;">Tentar Novamente</button>
+        <!-- Elemento para pop-up de erro -->
+        <div id="error-popup" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errorPopupLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="errorPopupLabel">Erro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Você errou todas as perguntas. Tente novamente!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <section class="baixo">
+    <!-- Footer -->
+    <footer id="footer" class="bg-body-tertiary text-center">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Alcolismo é doença e merece ser tratado</h5>
+  
+            <p>
+                Na luta contra o álcool, a união faz toda a diferença. Encontre aqui o suporte, a orientação e a compreensão que você precisa para trilhar o caminho da recuperação. Você não está sozinho nesta jornada. Juntos, podemos superar o álcool e construir um futuro mais saudável e feliz. Entre em contato conosco hoje e dê o primeiro passo rumo a uma vida renovada e plena.
+            </p>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Organizações de Apoio contra o Alcolismo</h5>
+  
+            <ul class="list-unstyled mb-0 links">
+              <li>
+                <a href="https://www.aa.org/" class="text-body">Alcoslismo Anonimos (AA)</a>
+              </li>
+              <li>
+                <a href="https://al-anon.org/" class="text-body">Al-Anon</a>
+              </li>
+              <li>
+                <a href="https://al-anon.org/alateen/" class="text-body">Alateen</a>
+              </li>
+              <li>
+                <a href="https://www.nar-anon.org/" class="text-body">Nar-Anon</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Saiba Mais</h5>
+  
+            <ul class="list-unstyled links2">
+              <li>
+                <a href="participantes.html" class="text-body">Participantes do Projeto</a>
+              </li>
+              <li>
+                <a href="desenvolvedor.html" class="text-body">Desenvolvedor do site</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://wa.me/+5511968529728" class="text-body">Entre em contato</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        <a class="text-body" href="#">Todos Direitos Reservados</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
