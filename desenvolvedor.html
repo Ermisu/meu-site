@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="desenvolvedor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Judson&family=Roboto&display=swap" rel="stylesheet">
+    <title>Desenvolvedor do Projeto</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background:#EFEFEF;
+        }
+        
+        .gallery {
+            display:flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+        }
+        
+        .content {
+            min-width: 20%;
+            width: 28%;
+            margin: 15px;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            border-radius: 20px;
+            cursor: pointer;
+            padding-top: 10px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+            0 10px 10px rgba(0,0,0,0.22);
+            transition: .4s;
+            background: #f2f2f2;
+            font-family:font-family 'Roboto', sans-serif ;
+        }
+        
+        .content:hover {
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16) 0 3px 6px rgba(0,0,0,0.23);
+            transform: translate(0px, -8px);
+        }
+        
+        #imgdesenvolvedores {
+            width: 50%;
+            height: 50%;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            border-radius: 50%;
+        }
+        
+        #nomes {
+            text-align: center;
+            color: #1C0808; 
+            font-family: 'Judson', serif ;
+            font-size: 26px;
+            margin-top: 2%;
+        }
+        
+        #texto {
+            font-family: 'Roboto', sans-serif ;
+            text-align: center;
+            font-size: 18px;
+            color: #1C0808;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-right:  3%;
+        }
+        
+        #titulo {
+            font-family: 'Judson', serif ;
+            text-align: center;
+            font-size: 35px;
+            color: #1C0808;
+            margin-top: 5%;
+        }
+        
+        .fa:hover {
+            transform: scale(1.3);
+            transition: .6s;
+        }
+        
+        .buy-1 {
+            background: #b2bec3;
+        }
+        
+        @media(max-width:1000px) {
+            .content {
+                width: 250px;
+            }
+        }
+        
+        @media(max-width:750px) {
+            .content {
+                width: 100%;
+            }
+        }
+        /* Estilos da seção baixo */
+        .baixo {
+            clear: both; /* Limpa as flutuações anteriores */
+            margin-top: 50px; /* Define a margem superior */
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <nav class="navbar navbar-dark bg-dark">
+                    <form class="form-inline">
+                        <a href="index.html" class="btn btn-outline-success" type="button">PAGINA PRINCIPAL</a>
+                        <a href="Quiz.html" class="btn btn-sm btn-outline-secondary" type="button">Quiz</a>
+                    </form>
+                    <button class="btn btn-outline-light" id="btnCompartilhar">
+                        <i class="fas fa-share"></i> Compartilhar
+                    </button>
+                    <!-- Popover de compartilhamento -->
+                    <div id="popoverCompartilhar" style="display: none;">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/index.html" class="btn btn-outline-primary btn-block" target="_blank">Compartilhar no Facebook</a>
+                        <a href="https://www.instagram.com/?url=http://127.0.0.1:5500/index.html" class="btn btn-outline-secondary btn-block" target="_blank">Compartilhar no Instagram</a>
+                        <a href="whatsapp://send?text=Confira este site:http://127.0.0.1:5500/index.html" class="btn btn-outline-danger btn-block">Compartilhar no WhatsApp</a>
+                        <!-- Adicione outros botões de compartilhamento conforme necessário -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10"><p id="titulo"><b>Desenvolvedor</b></p></div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="content">
+            <img src="Imagens/imagem-desenvolvedor.jpg" height="500" id="imgdesenvolvedores">
+            <p id="nomes">Emerson Pinheiro Moreira</p>
+            <p id="texto">Emerson Pinheiro, estudante de Análise e Desenvolvimento de Sistemas na Universidade Cruzeiro do Sul de São Miguel, possui habilidades em HTML, CSS e JavaScript. Sua contribuição foi crucial para a estética e funcionalidade do site, com uma abordagem orientada por pesquisas, garantindo resultados eficazes.</p>
+            <a target="_blank" href="https://www.instagram.com/ermisu__?igsh=MnB5ZDVjc2N2OGFh&utm_source=qr" class="btn instagram-btn">
+                <img src="https://img.icons8.com/fluent/24/ffffff/instagram-new.png" class="instagram-icon" alt="Instagram Icon">
+                Siga-me no Instagram
+            </a>
+        </div>
+    </div>
+
+<section class="baixo">
+    <!-- Footer -->
+    <footer id="footer" class="bg-body-tertiary text-center">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Alcolismo é doença e merece ser tratado</h5>
+  
+            <p>
+                Na luta contra o álcool, a união faz toda a diferença. Encontre aqui o suporte, a orientação e a compreensão que você precisa para trilhar o caminho da recuperação. Você não está sozinho nesta jornada. Juntos, podemos superar o álcool e construir um futuro mais saudável e feliz. Entre em contato conosco hoje e dê o primeiro passo rumo a uma vida renovada e plena.
+            </p>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Organizações de Apoio contra o Alcolismo</h5>
+  
+            <ul class="list-unstyled mb-0 links">
+              <li>
+                <a href="https://www.aa.org/" class="text-body">Alcoslismo Anonimos (AA)</a>
+              </li>
+              <li>
+                <a href="https://al-anon.org/" class="text-body">Al-Anon</a>
+              </li>
+              <li>
+                <a href="https://al-anon.org/alateen/" class="text-body">Alateen</a>
+              </li>
+              <li>
+                <a href="https://www.nar-anon.org/" class="text-body">Nar-Anon</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Saiba Mais</h5>
+  
+            <ul class="list-unstyled links2">
+              <li>
+                <a href="participantes.html" class="text-body">Participantes do Projeto</a>
+              </li>
+              <li>
+                <a href="desenvolvedor.html" class="text-body">Desenvolvedor do site</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://wa.me/+5511968529728" class="text-body">Entre em contato</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        <a class="text-body" href="#">Todos Direitos Reservados</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+  </footer>
+
+
+    
+    <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="script-desenvolvedor.js"></script>
+</body>
+</html>

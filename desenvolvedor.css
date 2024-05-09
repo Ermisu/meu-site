@@ -1,0 +1,59 @@
+.btn{
+    border-color: black;
+    color: white;
+}
+
+/* Estilo padrão dos botões */
+.navbar .btn {
+    transition: transform 0.3s ease;
+    margin: 0px 5px;
+}
+
+/* Efeito de hover nos botões de navegação */
+.navbar .btn:hover {
+    transform: scale(1.1); /* Ajuste o valor conforme desejado */
+    background-color: #2ecc71;
+}
+
+.instagram-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #405DE6;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+  }
+  
+  .instagram-btn:hover {
+    background-color: #4e6bff;
+  }
+  
+  .instagram-icon {
+    margin-right: 5px;
+  }
+  footer{
+    background-color: #604829;
+  }
+  
+  .links{
+    font-size: 15px;
+  }
+  
+  .links li{
+    margin: 10px 0px;
+    font-weight: bold;
+  }
+  
+  .links2{
+    font-size: 15px;
+    margin: 35px 0px
+  }
+  
+  .links2 li{
+    margin: 10px 0px;
+    font-weight: bold;
+  }
