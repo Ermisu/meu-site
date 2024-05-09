@@ -6,13 +6,15 @@ body {
 }
 
 .quiz-container {
-  max-width: 400px; /* Reduzindo a largura máxima */
+  max-width: 400px;
   margin: 50px auto;
-  padding: 10px; /* Reduzindo o espaçamento interno */
-  background-color: #fff;
+  padding: 20px;
+  background-color: #f9f9f9; /* Adicionando um gradiente sutil */
+  background-image: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
   border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
 }
 
 .quiz-title {
@@ -27,24 +29,36 @@ body {
 button.submit-button {
   display: block;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px; /* Bordas arredondadas nos botões */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave de cor e sombra */
 }
 
 button.submit-button:hover {
   background-color: #0056b3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Efeito de sombra ao passar o mouse */
 }
 
 .result {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  background-color: #fff; /* Fundo colorido para os resultados */
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result.show-result {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .correct-answer {
@@ -53,4 +67,200 @@ button.submit-button:hover {
 
 .wrong-answer {
   color: red;
+}
+
+/* Estilos adicionais para elementos específicos */
+.quiz-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-check-label {
+  cursor: pointer;
+}
+
+.form-check-label:hover {
+  text-decoration: underline;
+}
+
+.quiz-container input[type="radio"] {
+  margin-right: 10px;
+}
+
+.quiz-container input[type="radio"]:checked + .form-check-label {
+  font-weight: bold;
+}
+
+.quiz-container input[type="radio"]:focus {
+  outline: none;
+}
+
+.quiz-container input[type="radio"]:checked + .form-check-label:before {
+  content: "\2022";
+  color: green;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 5px;
+}
+  /* Estilos adicionados para animação de sacudir tela */
+  .shake {
+    animation: shake 0.5s;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+
+  /* Adicionando estilos modernos */
+/* Estilos para botões */
+button {
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Adicionando transição de sombra */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+}
+
+button:hover {
+  background-color: #4CAF50;
+  transform: translateY(-2px); /* Movendo o botão para cima ao passar o mouse */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumentando a profundidade da sombra */
+}
+
+button:active {
+  transform: translateY(0); /* Voltando o botão para a posição original ao clicar */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Retornando a sombra original ao clicar */
+}
+
+/* Estilos para labels */
+label {
+  font-size: 18px;
+}
+
+/* Estilos para inputs */
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Estilos para a seção de resultados */
+.result {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.result.show-result {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos para botão "Tentar Novamente" */
+#try-again {
+  margin-top: 20px;
+}
+
+/* Estilos para a mensagem de parabéns */
+.parabens {
+  color: #f39c12;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Adicionando animação de sacudir tela */
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+/* Adicionando animação de confete */
+@keyframes confetti {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(600px) rotate(360deg); }
+}
+
+.confetti {
+  position: fixed;
+  top: -20px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #f39c12;
+  opacity: 0.8;
+  transform: rotate(45deg);
+  animation: confetti 3s ease-out infinite;
+}
+
+/* Ajustando a posição e cor da mensagem de parabéns */
+.parabens {
+  text-align: center;
+  color: #f39c12;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn{
+  border-color: black;
+  color: white;
+}
+
+/* Estilo padrão dos botões */
+.navbar .btn {
+  transition: transform 0.3s ease;
+  margin: 0px 5px;
+}
+
+/* Efeito de hover nos botões de navegação */
+.navbar .btn:hover {
+  transform: scale(1.1); /* Ajuste o valor conforme desejado */
+  background-color: #2ecc71;
+}
+
+/* footer */
+
+footer{
+  background-color: #604829;
+}
+
+.links{
+  font-size: 15px;
+}
+
+.links li{
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.links2{
+  font-size: 15px;
+  margin: 35px 0px
+}
+
+.links2 li{
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.container-topo-todos{
+  margin-bottom: 50px;
 }
