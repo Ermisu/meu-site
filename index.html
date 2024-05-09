@@ -11,6 +11,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
+  <!-- NAV BAR -->
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <nav class="navbar navbar-dark bg-dark">
+                <form class="d-flex">
+                    <a href="#footer" class="btn btn-outline-success me-2" type="button">Veja Mais</a>
+                </form>
+                <button class="btn btn-outline-light ms-auto" id="btnCompartilhar">
+                    <i class="fas fa-share"></i> Compartilhar
+                </button>
+                <!-- Popover de compartilhamento -->
+                <div id="popoverCompartilhar" style="display: none;">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/index.html" class="btn btn-outline-primary btn-block" target="_blank">Compartilhar no Facebook</a>
+                  <a href="https://www.instagram.com/?url=http://127.0.0.1:5500/index.html" class="btn btn-outline-secondary btn-block" target="_blank">Compartilhar no Instagram</a>
+                  <a href="whatsapp://send?text=Confira este site:http://127.0.0.1:5500/index.html" class="btn btn-outline-danger btn-block">Compartilhar no WhatsApp</a>
+              </div>              
+            </nav>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</div>
+
   <div class="container-carrosel">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
         <div class="carousel-indicators">
@@ -28,7 +55,9 @@
                 <img src="Imagens/pexels-pixabay-274192.jpg" class="d-block w-100 imagem-carrosel" alt="...">
                 <div class="carousel-caption">
                     <h5>Acesse o Nosso Quiz</h5>
-                    <a target="_blank" href="Quiz.html" class="btn btn-outline-secondary">QUIZ</a>
+                    <a target="_blank" href="Quiz.html">
+                      <button type="button" class="btn btn-dark botao">QUIZ</button>
+                  </a>
                 </div>
             </div>
         </div>
@@ -60,12 +89,13 @@
             Além disso, o alcoolismo pode contribuir para problemas de saúde mental, como depressão e ansiedade. A longo prazo, pode levar a danos cerebrais permanentes, resultando em demência alcoólica, que afeta a memória, cognição e função mental. Essas complicações destacam a importância de buscar tratamento para o alcoolismo e adotar um estilo de vida saudável.
         </p>
     </div>
-
     <div class="container-topo faixa">
       <div class="conteudo-faixa">
-          <i>“O álcool é mau mensageiro: tu o envias à barriga, ele sobe à cabeça.”</i>
+        <i>“O álcool é mau mensageiro: tu o envias à barriga, ele sobe à cabeça.”</i>
       </div>
-  </div>
+    </div>
+    <div class="parallax"></div>
+    
   
     <div class="centralizar" >
         <h3>Tratamento </h3>
@@ -83,21 +113,85 @@
         <h3>Registro de morte em acidentes no Brasil</h3>
           <p>
             O Cisa estima que 69 mil mortes tenham ocorrido em 2021 por causas totalmente ou parcialmente atribuíveis ao álcool. Entre as principais doenças associadas ao uso abusivo de álcool estão a cirrose hepática, a pancreatite e diversos tipos de câncer, como o de faringe, laringe, boca, fígado e esôfago.
-            Esse é na parte onde fala mortes por conta do álcool pois ele é o principal causador de morte no trânsito de 44% dos acidentes
+            principal causa de acidentes de trânsito no Brasil é o consumo de álcool,no qual chega a causar cerca de 44% dos acidentes.
           </p>
     </div>
     <div class="centralizar" >
-        <h3>-Gráfico percentual sobre consumo abusivo do alcool</h3>
+        <h3>Gráfico percentual sobre consumo abusivo do alcool</h3>
         <div class="container-grafico">
           <img class="grafico" src="Imagens/Grafico-1.jpg" alt="">
         </div>
       </div>
-    <footer>
-        <p class="centro">ALCOLISMO É DOENÇA, E MERECE SER TRATADO</p>
-        <p>PARTICIPANTES</p>
-        <p>NOMES</p>
-        <p class="left">Desenvolvido por: <span>Emerson Pinheiro Moreira</span></p>
-    </footer>
+      <section class="baixo">
+        <!-- Footer -->
+        <footer id="footer" class="bg-body-tertiary text-center">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Alcolismo é doença e merece ser tratado</h5>
+      
+                <p>
+                    Na luta contra o álcool, a união faz toda a diferença. Encontre aqui o suporte, a orientação e a compreensão que você precisa para trilhar o caminho da recuperação. Você não está sozinho nesta jornada. Juntos, podemos superar o álcool e construir um futuro mais saudável e feliz. Entre em contato conosco hoje e dê o primeiro passo rumo a uma vida renovada e plena.
+                </p>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Organizações de Apoio contra o Alcolismo</h5>
+      
+                <ul class="list-unstyled mb-0 links">
+                  <li>
+                    <a href="https://www.aa.org/" class="text-body">Alcoslismo Anonimos (AA)</a>
+                  </li>
+                  <li>
+                    <a href="https://al-anon.org/" class="text-body">Al-Anon</a>
+                  </li>
+                  <li>
+                    <a href="https://al-anon.org/alateen/" class="text-body">Alateen</a>
+                  </li>
+                  <li>
+                    <a href="https://www.nar-anon.org/" class="text-body">Nar-Anon</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Saiba Mais</h5>
+      
+                <ul class="list-unstyled links2">
+                  <li>
+                    <a href="participantes.html" class="text-body">Participantes do Projeto</a>
+                  </li>
+                  <li>
+                    <a href="desenvolvedor.html" class="text-body">Desenvolvedor do site</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://wa.me/+5511968529728" class="text-body">Entre em contato</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-body" href="#">Todos Direitos Reservados</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="script-home.js"></script>
 </body>
