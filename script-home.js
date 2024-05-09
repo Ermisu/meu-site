@@ -46,3 +46,12 @@ window.addEventListener('load', addInViewClass);
 // Adiciona a classe 'in-view' quando o usuário rola a página
 window.addEventListener('scroll', addInViewClass);
 
+document.getElementById('btnCompartilhar').addEventListener('click', function() {
+    var popover = document.getElementById('popoverCompartilhar');
+    if (popover.style.display === 'none') {
+        popover.style.display = 'block';
+    } else {
+        popover.style.display = 'none';
+    }
+});
+
