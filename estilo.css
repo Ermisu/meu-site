@@ -17,6 +17,27 @@ body{
     width: 100%;
 }
 
+/*navbar*/
+
+/* Cor do popover */
+#popoverCompartilhar .btn-outline-primary,
+#popoverCompartilhar .btn-outline-info,
+#popoverCompartilhar .btn-outline-danger {
+    color: #495057; /* Cor do texto */
+    border-color: #495057; /* Cor da borda */
+    background-color: transparent; /* Cor de fundo */
+}
+
+/* Hover */
+#popoverCompartilhar .btn-outline-primary:hover,
+#popoverCompartilhar .btn-outline-info:hover,
+#popoverCompartilhar .btn-outline-danger:hover {
+    color: #495057; /* Cor do texto no hover */
+    border-color: #198754; /* Cor da borda no hover */
+    background-color: #2ecc71; /* Cor de fundo no hover */
+}
+
+
 /*Carrossel*/
 
 /* Estilos para dispositivos móveis */
@@ -31,10 +52,15 @@ body{
 
     .container-carrosel .carousel-caption a.btn {
         font-size: 12px; /* Define o tamanho do link (a) para dispositivos móveis */
-        padding: 5px 10px; /* Ajusta o padding do botão para dispositivos móveis */
+        padding: 5px 15px; /* Ajusta o padding do botão para dispositivos móveis */
     }
 }
 
+/* botao segundo slide */
+
+a .botao{
+  padding: 5px 50px;
+}
 
 .container-carrosel{
     margin-bottom: 30px;
@@ -71,6 +97,7 @@ body{
 
 .carousel-caption a{
     padding: 5px 40px;
+    color: black;
 }
 
 .carrosel{
@@ -99,26 +126,29 @@ p{
 
 /*FAIXA BACKGROUND*/
 
-.faixa {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 40vh;
-    margin: 20px 0px;
+/*FAIXA BACKGROUND*/
 
+.faixa {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixa o plano de fundo */
+  background-repeat: no-repeat;
+  height: 40vh;
+  margin: 20px 0px;
 }
 
 .conteudo-faixa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-    color: white;
-    opacity: 0; /* Altere a opacidade para 0 inicialmente para ocultar o texto */
-    transition: opacity 0.5s ease; /* Transição de opacidade mais simples */
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Alterada a altura para 100% para ocupar toda a altura da faixa */
+  color: white;
+  opacity: 0; /* Altere a opacidade para 0 inicialmente para ocultar o texto */
+  transition: opacity 0.5s ease; /* Transição de opacidade mais simples */
+  text-align: center;
+  position: relative; /* Adicionada posição relativa */
+  z-index: 1; /* Adicionada z-index maior para garantir que fique acima das imagens */
 }
 
 /* Adiciona a classe 'in-view' quando a faixa está visível na tela */
@@ -166,33 +196,32 @@ p{
 
 footer{
     background-color: #604829;
-    position: relative;
-    padding-bottom: 10px;
 }
 
-.direita{
-    text-align: left;
+.links{
+    font-size: 15px;
 }
 
-.centro{
-    text-align: center;
-    font-size: 16px;
+.links li{
+    margin: 10px 0px;
+    font-weight: bold;
 }
 
-footer span{
-    color: #c4a47c;
+.links2{
+    font-size: 15px;
+    margin: 35px 0px
 }
 
-footer p{
-    color: white;
+.links2 li{
+    margin: 10px 0px;
+    font-weight: bold;
 }
 
 .grafico{
-    width: 30%;
-    border-radius: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
     border: 2px solid black;
-    width: 40%;
-    margin-bottom: 30px;
+    width: 50%;
 }
 
 .container-grafico{
