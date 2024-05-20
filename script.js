@@ -3,13 +3,15 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
   const answers = {
     q1: 'Cirrose',
     q2: 'Diabetes',
-    q3: 'Período neolítico'
+    q3: 'Período neolítico',
+    q4: 'figado',
+    q5: 'consequencia'
   };
   let score = 0;
   let allCorrect = true; // Variável para verificar se todas as respostas estão corretas
 
   // Verifica respostas
-  for (let i = 1; i <= 3; i++) {
+  for (let i = 1; i <= 5; i++) {
     const selectedAnswer = document.querySelector(`input[name=q${i}]:checked`);
     const questionDiv = document.querySelector(`#question${i}`);
     if (selectedAnswer && selectedAnswer.value === answers[`q${i}`]) {
@@ -27,7 +29,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
   const resultDiv = document.querySelector('.result');
   resultDiv.innerHTML = `
     <p>Respostas corretas: <span class="${score > 0 ? 'correct-answer' : ''}">${score}</span></p>
-    <p>Respostas erradas: <span class="${score < 3 ? 'wrong-answer' : ''}">${3 - score}</span></p>
+    <p>Respostas erradas: <span class="${score < 5 ? 'wrong-answer' : ''}">${5 - score}</span></p>
   `;
 
   // Exibe botão "Tentar Novamente"
@@ -35,7 +37,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
   tryAgainBtn.style.display = 'block';
 
   // Verifica se todas as respostas estão corretas e exibe a mensagem de parabéns com confetes
-  if (allCorrect && score === 3) {
+  if (allCorrect && score === 5) {
     resultDiv.innerHTML += `<div class="parabens">Parabéns! Você acertou todas as perguntas!</div>`;
     showCongratulationsPopup();
     createConfetti();
